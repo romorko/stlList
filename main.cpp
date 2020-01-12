@@ -24,6 +24,8 @@ int main()
         cisla.remove_if([prvy](auto prvok) { return !(prvok % (*prvy)); });
         prvy = cisla.begin();
     }
+    cisla.sort();
+    cisla.unique();
 /*  int sucet=std::accumulate(cisla.begin(),cisla.end(),0);
     int sucin=std::accumulate(cisla.begin(),cisla.end(),1,[](auto i,auto j){return i*j;});
     cout<<sucin<<" "<<sucet;*/
